@@ -4,4 +4,19 @@ meter using the optical infrared two-way port.
 You need an IR LED, a IR photodiode and some kind of amplifying circuit
 to connect this to your serial port.
 
+iec1107.py contains old code to talk the simple IEC1107 protocol
+which a lot of meters fortunately understand.
+
+example.py and the rest of it is a minimal DLMS implementation
+which manages to pull data out of my L&G E450 meter.
+
+Please do not email me if this doesn't work for you, unless you
+include a patch or pull-request that improves it.
+
+Be warned that the DLMS protocol stack is created by a succession
+of morons, doing one stupid thing after another for several decades.
+
+If you need more DLMS than this code offers, consider what GuruX
+has to offer.
+
 Poul-Henning
